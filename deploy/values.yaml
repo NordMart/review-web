@@ -3,18 +3,15 @@ application:
   applicationName: "review-web"
 
   deployment:
-    imagePullSecrets: nexus-docker-config-forked    
+    imagePullSecrets: docker-reg-creds
     env:
       PORT:
         value: "4200"
       REVIEW_API:
         # This is hardcoded!
-        value: "https://review-webinar-dev.apps.preprod.jlvwjls8.kubeapp.cloud"
+        value: "https://review-arsenal-dev.apps.cleura-poc-spoke-3.x1zhra08.lab.kubeapp.cloud"
       PAGE_TITLE:
-         valueFrom:
-            secretKeyRef:
-              name: review-web-review-ui-secret
-              key: page_title
+         value: "HELLO WORLD!"
     probes:
       readinessProbe:
         failureThreshold: 3
