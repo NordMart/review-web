@@ -272,7 +272,7 @@ spec:
          - name: source
            workspace: source
          - name: ssh-directory
-           workspace: cd-ssh-creds
+           workspace: ssh-directory
 
      - name: stakater-validate-environment
        runAfter:
@@ -300,10 +300,7 @@ spec:
              storage: 1Gi
    - name: ssh-directory
      secret:
-       secretName: nordmart-web-ssh-creds
-   - name: cd-ssh-creds
-     secret:
-       secretName: cd-ssh-creds
+       secretName: git-ssh-creds
    - name: repo-token
      secret:
        secretName: git-pat-creds
