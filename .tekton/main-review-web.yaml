@@ -133,8 +133,6 @@ spec:
             value: $(params.repo_path)
           - name: GIT_REVISION
             value: main
-          - name: NAMESPACE
-            value: arsenal-dev
           - name: ENVIRONMENT
             value: dev
           - name: HELM_REGISTRY
