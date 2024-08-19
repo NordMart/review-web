@@ -24,7 +24,7 @@ spec:
     - name: git_branch
       value: "{{source_branch}}"
     - name: organization
-      value: "{{body.pull_request.head.repo.owner.login}}"
+      value: "{{body.organization.login}}"
   pipelineSpec:
     params:
       - name: repo_url
