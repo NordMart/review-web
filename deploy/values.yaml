@@ -12,25 +12,24 @@ application:
         value: "https://review-arsenal-dev.apps.cleura-poc-spoke-3.x1zhra08.lab.kubeapp.cloud"
       PAGE_TITLE:
          value: "HELLO WORLD!"
-    probes:
-      readinessProbe:
-        failureThreshold: 3
-        periodSeconds: 10
-        successThreshold: 1
-        timeoutSeconds: 1
-        initialDelaySeconds: 10
-        httpGet:
-          path: /health
-          port: 4200
-      livenessProbe:
-        failureThreshold: 3
-        periodSeconds: 10
-        successThreshold: 1
-        timeoutSeconds: 1
-        initialDelaySeconds: 10
-        httpGet:
-          path: /health
-          port: 4200
+    readinessProbe:
+      failureThreshold: 3
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+      initialDelaySeconds: 10
+      httpGet:
+        path: /health
+        port: 4200
+    livenessProbe:
+      failureThreshold: 3
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 1
+      initialDelaySeconds: 10
+      httpGet:
+        path: /health
+        port: 4200
 
   service:
     ports:
