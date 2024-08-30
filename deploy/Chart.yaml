@@ -3,7 +3,7 @@ name: review-web
 description: A Helm chart for Kubernetes
 dependencies:
 - name: application
-  version: 1.1.14
+  version: 4.2.6
   repository: https://stakater.github.io/stakater-charts
 
 # DON'T TOUCH THIS
