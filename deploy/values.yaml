@@ -9,7 +9,7 @@ application:
         value: "4200"
       REVIEW_API:
         # This is hardcoded!
-        value: "https://review-arsenal-dev.apps.cleura-poc-spoke-3.x1zhra08.lab.kubeapp.cloud"
+        value: "https://review-retail-dev.apps.nm-prod.stakater.cloud"
       PAGE_TITLE:
          value: "HELLO WORLD!"
     readinessProbe:
